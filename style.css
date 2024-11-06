@@ -1,15 +1,17 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Bell MT', Bell, monospace;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
 header, footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 16px 0;
 }
+
 main {
     padding: 222px 20px;
 }
