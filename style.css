@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Bell MT', Bell, monospace;
+    font-family: 'Times New Roman', Times, serif, monospace;
     margin: 0;
     box-sizing: border-box;
     width: auto;
@@ -110,16 +110,18 @@ main p a:hover{
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    width: 100%;
 }
+
 .imm1, .imm2{
     display: flex;
     align-items: center;
-    justify-content: center; 
-    width: 40%; 
+    justify-content: center;  
     padding: 10px;
 }
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
     height: auto;
 }
