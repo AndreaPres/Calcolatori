@@ -1,8 +1,8 @@
 :root {
     --colore-nav-footer-1: rgb(14, 225, 14);
     --colore-nav-footer-2: yellow;
-    --colore-nav-footer-3: cyan;
-    --colore-nav-footer-4: orange;
+    --colore-nav-footer-3: orange;
+    --colore-nav-footer-4: cyan;
 }
 
 body {
@@ -80,6 +80,11 @@ main{
     flex:1;
 }
 
+.corpo-centrale{
+    display: flex;
+    width: 100%;
+}
+
 main div.testo {
     padding: 10px;
     width: 60%;
@@ -101,8 +106,18 @@ main p a:hover{
     background-color: gray;
     color: white;
 }
-main div img {
-    position: right;
+.immagini {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+}
+.imm1, .imm2{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 40%; 
+    padding: 10px;
 }
 img {
     max-width: 100%;
@@ -115,7 +130,25 @@ img {
     }
 }
 
+ul {
+    padding: 10px;
+    margin: 0;
+}
 
+ul li {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 5px;
+}
+
+ul li b {
+    flex-shrink: 0; 
+    width: 220px; 
+}
+
+ul li .descrizione {
+    margin-left: 10px;
+}
 
 
 footer {
