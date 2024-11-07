@@ -8,6 +8,8 @@
 body {
     font-family: 'Bell MT', Bell, monospace;
     margin: 0;
+    box-sizing: border-box;
+    width: auto;
     min-height:100vh;
     flex-direction:column;
     padding: 0;
@@ -28,24 +30,23 @@ nav ul {
     padding: 10px 0;
     margin: 0;
     display: flex;
-    justify-content: centre; 
+    align-items: center;
 }
 
-nav.nav1 ul {
-    background-color: var(--colore-nav-footer-1); /* Color for the first nav */
-}
-nav.nav2 ul {
-    background-color: var(--colore-nav-footer-2); /* Color for the second nav */
-}
-nav.nav3 ul {
-    background-color: var(--colore-nav-footer-3); /* Color for the third nav */
-}
-nav.nav4 ul {
-    background-color: var(--colore-nav-footer-4); /* Color for the third nav */
+nav ul .centro {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
-nav ul li:first-child {
-    margin-right: 28%; 
+
+@media (max-width: 700px) {
+    nav ul li:first-child{
+        padding-bottom: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 nav ul li {
@@ -62,6 +63,60 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+nav.nav1 ul {
+    background-color: var(--colore-nav-footer-1); /* Color for the first nav */
+}
+nav.nav2 ul {
+    background-color: var(--colore-nav-footer-2); /* Color for the second nav */
+}
+nav.nav3 ul {
+    background-color: var(--colore-nav-footer-3); /* Color for the third nav */
+}
+nav.nav4 ul {
+    background-color: var(--colore-nav-footer-4); /* Color for the third nav */
+}
+
+main{
+    flex:1;
+}
+
+main div.testo {
+    padding: 10px;
+    width: 60%;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+}
+main h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+main p a {
+    text-decoration: none;
+    font-style: italic;
+}
+main p a:hover{
+    text-decoration: underline;
+    background-color: gray;
+    color: white;
+}
+main div img {
+    position: right;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 1018px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
 
 footer {
     color: black;
@@ -86,32 +141,4 @@ footer.footer3 {
 }
 footer.footer4 {
     background-color: var(--colore-nav-footer-4); 
-}
-
-main{
-    flex:1;
-}
-
-main div {
-    padding: 10px;
-    width: 60%;
-    text-align: left;
-    font-size: 16px;
-    color: black;
-}
-main h1 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-}
-main p a {
-    text-decoration: none;
-    color: black;
-    font-style: italic;
-}
-main p a:hover{
-    text-decoration: underline;
-    background-color: gray;
-    color: white;
 }
