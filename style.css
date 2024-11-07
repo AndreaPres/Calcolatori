@@ -145,9 +145,16 @@ ul li {
 
 ul li b {
     flex-shrink: 0; 
+}
+.fotov{
+    width: 215px; 
+}
+.eo{
+    width: 180px; 
+}
+.idro{
     width: 240px; 
 }
-
 ul li .descrizione {
     margin-left: 10px;
 }
